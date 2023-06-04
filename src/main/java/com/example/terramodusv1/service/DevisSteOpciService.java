@@ -332,7 +332,7 @@ public class DevisSteOpciService {
         outputStream.close();
         document.close();
         outputStream1.close();
-        File file = new File("C:\\Users\\anass\\Downloads\\exported_report.docx");
+        File file = new File("src/main/resources/exported_report.docx");
         emailService.sendHtmlMessage("anassbougaterra@gmail.com", "Demande Devis", byteArray, file);
         return savedDevis;
     }
